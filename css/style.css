@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d1b1b1;
+}
+
+.gallery{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    background-color: limegreen;
+    padding: 10px 0;
+    color: lightcyan;
+}
+
+img{
+    width: 100%;
+}
+
+.animal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(247, 84, 84);
+}
+
+@media screen and (max-width: 576px) {
+        .animal{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+    .animal{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h2{
+        font-size: 2em;
+        color: blue;
+    }
+}
+
+.beautiful{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(203, 222, 135);
+}
+
+@media screen and (max-width: 576px) {
+    .beautiful{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+    .beautiful{
+        grid-template-columns: repeat(1, 1fr); 
+    }   
+}
+
+.split-container{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.split-container .left-div{
+    width: 100%;
+    padding: 10px;
+}
+
+.left-div h3{
+    font-size: 2em;
+    line-height: 0.99;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: rgb(22, 22, 22);
+}
+
+.left-div p {
+    margin-bottom: 5px;
+    color: rgb(71, 71, 71);
+    font-weight: 500;
+    text-align: justify;
+}
+
+.split-container .right-div{
+    width: 100%;
+}
+
+.split-container .right-div img{
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.right-div h3{
+    font-size: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .split-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .right-div{
+        width: 50%;
+        padding: 0px 10px;
+    }
+    .right-div img{
+        width: 100%;
+        padding: 0px 10px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+    .split-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .right-div{
+        width: 50%;
+        padding: 0px 10px;
+    }
+    .right-div img{
+        width: 100%;
+        padding: 0px 10px;
+    }
+}
